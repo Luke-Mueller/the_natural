@@ -1,0 +1,83 @@
+html {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 98vh;
+    background-image: url("./images/felt.jpeg ");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#plr-container {
+    width: 100vw;
+    position: fixed;
+    bottom: 18vh;
+    display: flex;
+    justify-content: center;
+}
+
+.player {
+    /*width: 10vw;*/
+    /*padding: 5px;*/
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0 25px;
+}
+
+.player li {
+    margin-top: -17vh;
+}
+
+.card {
+    height: 20vh;
+    margin: 0 5px;
+}
+
+#dlr-container {
+    position: fixed;
+    top: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#dealer {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    bottom: 6vh;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border-radius: 8px;
+    margin: 10px auto;
+}
+
+button {
+    height: 80px;
+    width: 80px;
+    font-size: 18px;
+    border-radius: 100%;
+    margin: 20px;
+    background: linear-gradient(lightskyblue, cornflowerblue);
+    box-shadow: 3px 3px 6px lightslategray;
+    color: white;
+}
+
+
+button:hover {
+    box-shadow: 3px 3px 6px #796f69;
+    background: linear-gradient(#99d5fa, #7098ed);
+}
+
+.active {}
+
