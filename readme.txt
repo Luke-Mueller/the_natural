@@ -1,4 +1,4 @@
-To run on localHost/8080, run: 
+To run on localHost:8080, run: 
 
 $ npm start
 
