@@ -1,7 +1,7 @@
 // TODO DATA CONTROLLER
 
 // Data variables
-let
+let 
   deck = [
     {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
     {rank: '2', suit: 'spades', value: 2, id: '2S'},
@@ -173,6 +173,8 @@ function calcDealerRoundTotal() {
   dealerRoundTotal = checkAceValue(dealerRoundTotal, dealerHand);
 }
 
+
+
 // TODO UI CONTROLLER
 
 // UI functions
@@ -209,6 +211,11 @@ function clearDisplay() {
   player3.style.display = 'none';
   player4.style.display = 'none';
 }
+
+
+
+
+
 
 // TODO APP CONTROLLER
 
