@@ -1,81 +1,61 @@
+import { displayCard, clearDisplay } from './ui';
 // TODO DATA CONTROLLER
 
 // Data variables
 let 
   deck = [
     {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-    {rank: 'ace', suit: 'spades', value: 11, id: 'AS'},
-
-    // {rank: '2', suit: 'spades', value: 2, id: '2S'},
-    // {rank: '3', suit: 'spades', value: 3, id: '3S'},
-    // {rank: '4', suit: 'spades', value: 4, id: '4S'},
-    // {rank: '5', suit: 'spades', value: 5, id: '5S'},
-    // {rank: '6', suit: 'spades', value: 6, id: '6S'},
-    // {rank: '7', suit: 'spades', value: 7, id: '7S'},
-    // {rank: '8', suit: 'spades', value: 8, id: '8S'},
-    // {rank: '9', suit: 'spades', value: 9, id: '9S'},
-    // {rank: '10', suit: 'spades', value: 10, id: '10S'},
-    // {rank: 'jack', suit: 'spades', value: 10, id: 'JS'},
-    // {rank: 'queen', suit: 'spades', value: 10, id: 'QS'},
-    // {rank: 'king', suit: 'spades', value: 10, id: 'KS'},
-    // {rank: 'ace', suit: 'hearts', value: 11, id: 'AH'},
-    // {rank: '2', suit: 'hearts', value: 2, id: '2H'},
-    // {rank: '3', suit: 'hearts', value: 3, id: '3H'},
-    // {rank: '4', suit: 'hearts', value: 4, id: '4H'},
-    // {rank: '5', suit: 'hearts', value: 5, id: '5H'},
-    // {rank: '6', suit: 'hearts', value: 6, id: '6H'},
-    // {rank: '7', suit: 'hearts', value: 7, id: '7H'},
-    // {rank: '8', suit: 'hearts', value: 8, id: '8H'},
-    // {rank: '9', suit: 'hearts', value: 9, id: '9H'},
-    // {rank: '10', suit: 'hearts', value: 10, id: '10H'},
-    // {rank: 'jack', suit: 'hearts', value: 10, id: 'JH'},
-    // {rank: 'queen', suit: 'hearts', value: 10, id: 'QH'},
-    // {rank: 'king', suit: 'hearts', value: 10, id: 'KH'},
-    // {rank: 'ace', suit: 'diamonds', value: 11, id: 'AD'},
-    // {rank: '2', suit: 'diamonds', value: 2, id: '2D'},
-    // {rank: '3', suit: 'diamonds', value: 3, id: '3D'},
-    // {rank: '4', suit: 'diamonds', value: 4, id: '4D'},
-    // {rank: '5', suit: 'diamonds', value: 5, id: '5D'},
-    // {rank: '6', suit: 'diamonds', value: 6, id: '6D'},
-    // {rank: '7', suit: 'diamonds', value: 7, id: '7D'},
-    // {rank: '8', suit: 'diamonds', value: 8, id: '8D'},
-    // {rank: '9', suit: 'diamonds', value: 9, id: '9D'},
-    // {rank: '10', suit: 'diamonds', value: 10, id: '10D'},
-    // {rank: 'jack', suit: 'diamonds', value: 10, id: 'JD'},
-    // {rank: 'queen', suit: 'diamonds', value: 10, id: 'QD'},
-    // {rank: 'king', suit: 'diamonds', value: 10, id: 'KD'},
-    // {rank: 'ace', suit: 'clubs', value: 11, id: 'AC'},
-    // {rank: '2', suit: 'clubs', value: 2, id: '2C'},
-    // {rank: '3', suit: 'clubs', value: 3, id: '3C'},
-    // {rank: '4', suit: 'clubs', value: 4, id: '4C'},
-    // {rank: '5', suit: 'clubs', value: 5, id: '5C'},
-    // {rank: '6', suit: 'clubs', value: 6, id: '6C'},
-    // {rank: '7', suit: 'clubs', value: 7, id: '7C'},
-    // {rank: '8', suit: 'clubs', value: 8, id: '8C'},
-    // {rank: '9', suit: 'clubs', value: 9, id: '9C'},
-    // {rank: '10', suit: 'clubs', value: 10, id: '10C'},
-    // {rank: 'jack', suit: 'clubs', value: 10, id: 'JC'},
-    // {rank: 'queen', suit: 'clubs', value: 10, id: 'QC'},
-    // {rank: 'king', suit: 'clubs', value: 10, id: 'KC'}
+    {rank: '2', suit: 'spades', value: 2, id: '2S'},
+    {rank: '3', suit: 'spades', value: 3, id: '3S'},
+    {rank: '4', suit: 'spades', value: 4, id: '4S'},
+    {rank: '5', suit: 'spades', value: 5, id: '5S'},
+    {rank: '6', suit: 'spades', value: 6, id: '6S'},
+    {rank: '7', suit: 'spades', value: 7, id: '7S'},
+    {rank: '8', suit: 'spades', value: 8, id: '8S'},
+    {rank: '9', suit: 'spades', value: 9, id: '9S'},
+    {rank: '10', suit: 'spades', value: 10, id: '10S'},
+    {rank: 'jack', suit: 'spades', value: 10, id: 'JS'},
+    {rank: 'queen', suit: 'spades', value: 10, id: 'QS'},
+    {rank: 'king', suit: 'spades', value: 10, id: 'KS'},
+    {rank: 'ace', suit: 'hearts', value: 11, id: 'AH'},
+    {rank: '2', suit: 'hearts', value: 2, id: '2H'},
+    {rank: '3', suit: 'hearts', value: 3, id: '3H'},
+    {rank: '4', suit: 'hearts', value: 4, id: '4H'},
+    {rank: '5', suit: 'hearts', value: 5, id: '5H'},
+    {rank: '6', suit: 'hearts', value: 6, id: '6H'},
+    {rank: '7', suit: 'hearts', value: 7, id: '7H'},
+    {rank: '8', suit: 'hearts', value: 8, id: '8H'},
+    {rank: '9', suit: 'hearts', value: 9, id: '9H'},
+    {rank: '10', suit: 'hearts', value: 10, id: '10H'},
+    {rank: 'jack', suit: 'hearts', value: 10, id: 'JH'},
+    {rank: 'queen', suit: 'hearts', value: 10, id: 'QH'},
+    {rank: 'king', suit: 'hearts', value: 10, id: 'KH'},
+    {rank: 'ace', suit: 'diamonds', value: 11, id: 'AD'},
+    {rank: '2', suit: 'diamonds', value: 2, id: '2D'},
+    {rank: '3', suit: 'diamonds', value: 3, id: '3D'},
+    {rank: '4', suit: 'diamonds', value: 4, id: '4D'},
+    {rank: '5', suit: 'diamonds', value: 5, id: '5D'},
+    {rank: '6', suit: 'diamonds', value: 6, id: '6D'},
+    {rank: '7', suit: 'diamonds', value: 7, id: '7D'},
+    {rank: '8', suit: 'diamonds', value: 8, id: '8D'},
+    {rank: '9', suit: 'diamonds', value: 9, id: '9D'},
+    {rank: '10', suit: 'diamonds', value: 10, id: '10D'},
+    {rank: 'jack', suit: 'diamonds', value: 10, id: 'JD'},
+    {rank: 'queen', suit: 'diamonds', value: 10, id: 'QD'},
+    {rank: 'king', suit: 'diamonds', value: 10, id: 'KD'},
+    {rank: 'ace', suit: 'clubs', value: 11, id: 'AC'},
+    {rank: '2', suit: 'clubs', value: 2, id: '2C'},
+    {rank: '3', suit: 'clubs', value: 3, id: '3C'},
+    {rank: '4', suit: 'clubs', value: 4, id: '4C'},
+    {rank: '5', suit: 'clubs', value: 5, id: '5C'},
+    {rank: '6', suit: 'clubs', value: 6, id: '6C'},
+    {rank: '7', suit: 'clubs', value: 7, id: '7C'},
+    {rank: '8', suit: 'clubs', value: 8, id: '8C'},
+    {rank: '9', suit: 'clubs', value: 9, id: '9C'},
+    {rank: '10', suit: 'clubs', value: 10, id: '10C'},
+    {rank: 'jack', suit: 'clubs', value: 10, id: 'JC'},
+    {rank: 'queen', suit: 'clubs', value: 10, id: 'QC'},
+    {rank: 'king', suit: 'clubs', value: 10, id: 'KC'}
   ],
   playerHand1 = [],
   playerHand2 = [],
@@ -192,50 +172,6 @@ function calcDealerRoundTotal() {
   });
   dealerRoundTotal = checkAceValue(dealerRoundTotal, dealerHand);
 }
-
-
-
-// TODO UI CONTROLLER
-
-// UI functions
-function displayCard(card, person) {
-  const li = document.createElement('li');
-  const left = document.getElementById(person).childElementCount * 8 + 'vw';
-  if (person !== 'dealer') {
-    li.innerHTML = `<img class="card" src="./images/${card.id}.png" alt=""/>`;
-    li.style.marginLeft = left;
-    document.getElementById(person).appendChild(li);
-  } else {
-    li.innerHTML = `<img class="card" src="./images/${card.id}.png" alt=""/>`;
-    document.getElementById(person).appendChild(li);
-  }
-}
-
-function clearDisplay() {
-  while (player1.lastChild) {
-    player1.removeChild(player1.lastChild);
-  }
-  while (player2.lastChild) {
-    player2.removeChild(player2.lastChild);
-  }
-  while (player3.lastChild) {
-    player3.removeChild(player3.lastChild);
-  }
-  while (player4.lastChild) {
-    player4.removeChild(player4.lastChild);
-  }
-  while (dealer.lastChild) {
-    dealer.removeChild(dealer.lastChild);
-  }
-  player2.style.display = 'none';
-  player3.style.display = 'none';
-  player4.style.display = 'none';
-}
-
-
-
-
-
 
 // TODO APP CONTROLLER
 

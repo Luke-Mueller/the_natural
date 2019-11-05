@@ -1,5 +1,6 @@
 To run on localHost:8080, run: 
 
+$ npm install
 $ npm start
 
 
