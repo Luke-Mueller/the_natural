@@ -1,6 +1,6 @@
 export function displayCard(card, person) {
   const li = document.createElement('li');
-  const left = document.getElementById(person).childElementCount * 8 + 'vw';
+  const left = document.getElementById(person).childElementCount * 6.25 + 'vw';
   if (person !== 'dealer') {
     li.innerHTML = `<img class="card" src="./images/${card.id}.png" alt=""/>`;
     li.style.marginLeft = left;

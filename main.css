@@ -5,7 +5,7 @@ html {
 body {
     width: 100vw;
     height: 98vh;
-    background-image: url("./images/felt.jpeg ");
+    background-image: url("./images/table.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,11 +29,11 @@ body {
 }
 
 .player li {
-    margin-top: -17vh;
+    margin-top: -15vh;
 }
 
 .card {
-    height: 20vh;
+    height: 22vh;
     margin: 0 5px;
 }
 
@@ -78,6 +78,3 @@ button:hover {
     box-shadow: 3px 3px 6px #796f69;
     background: linear-gradient(#99d5fa, #7098ed);
 }
-
-.active {}
-
